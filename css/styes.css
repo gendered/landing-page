@@ -1,1 +1,27 @@
 
+@font-face {
+  font-family: 'RomanaBTWXX-Roman';
+  src: url('webfonts/383E86_0_0.eot');
+  src: url('webfonts/383E86_0_0.eot?#iefix') 
+    format('embedded-opentype'),
+    url('webfonts/383E86_0_0.woff2') 
+    format('woff2'),url('webfonts/383E86_0_0.woff')
+    format('woff'),url('webfonts/383E86_0_0.ttf') 
+    format('truetype');
+}
+ 
+  
+@font-face {
+  font-family: 'RomanaBTWXX-Bold';
+  src: url('webfonts/383E86_1_0.eot');
+  src: url('webfonts/383E86_1_0.eot?#iefix') 
+    format('embedded-opentype'),
+    url('webfonts/383E86_1_0.woff2') 
+    format('woff2'),url('webfonts/383E86_1_0.woff') 
+    format('woff'),url('webfonts/383E86_1_0.ttf') 
+    format('truetype');
+}
+ 
+h1 {
+  font-family: 'RomanaBTWXX-Bold';
+}
