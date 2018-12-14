@@ -26,7 +26,6 @@ html, body {
   padding: 0;
   margin: 0;
   color: rgb(18,18,18);
-  background: rgb(18,18,18);
 }
 
 h1 {
@@ -64,9 +63,9 @@ input {
 }
 
 .right-container {
-  position: fixed;
+  /* position: fixed;
   top: 0;
-  right: 0;
+  right: 0; */
   color: white;
   background: rgb(18,18,18);
 }
@@ -86,17 +85,13 @@ input {
   transform-origin: center center;
 }
 
-
-
-
-
-
 /* spacing */
 .pa0 { padding: 0; }
 .pa4 { padding: 2rem; }
 .pv1 { padding-top: .25rem; padding-bottom: .25rem; }
 .pv2 { padding-top: .5rem; padding-bottom: .5rem; }
 .pb2 { padding-bottom: .5rem; }
+.pa5 { padding: 4rem; }
 
 .ma5 { margin: 4rem; }
 
@@ -133,5 +128,5 @@ input {
  .container { flex-direction: column;}
 }
 
-.scroll { overflow-y: scroll; }
-.no-scroll { overflow: hidden;}
+.scroll { overflow: scroll; }
+.no-scroll { overflow: hidden; }
