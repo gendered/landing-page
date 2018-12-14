@@ -1,6 +1,7 @@
 
 @font-face {
   font-family: 'RomanaBTWXX-Bold';
+  font-display: auto;
   src: url('../fonts/383E86_1_0.eot');
   src: url('../fonts/383E86_1_0.eot?#iefix')
     format('embedded-opentype'),
@@ -12,6 +13,7 @@
 
 @font-face {
   font-family: "Acumin";
+  font-display: auto;
   src: url('../fonts/AcuminPro-Regular.eot'),
   	url("../fonts/AcuminPro-Regular.otf") format("ttf"),
   	url("../fonts/AcuminPro-Regular.woff") format("woff"),
@@ -22,10 +24,38 @@
 }
 
 html, body {
-  height: 100%;
   padding: 0;
   margin: 0;
   color: rgb(18,18,18);
+}
+
+body,
+html,
+.container {
+  height: 100%;
+}
+
+body {
+  font-family: "Acumin", "Helvetica neue", sans-serif;
+  font-size: 1rem;
+  line-height: 1.6rem;
+}
+
+.container,
+.content {
+  display: flex;
+}
+
+.container {
+  flex-direction: column;
+}
+
+.content,
+.content .right-container, .left-container {
+  flex: 1;
+}
+.content .right-container, .left-container {
+  overflow-y: scroll;
 }
 
 h1 {
@@ -39,12 +69,6 @@ p {
   margin-bottom: 1rem;
 }
 
-body {
-  font-family: "Acumin", "helvtica neue", sans-serif;
-  font-size: 1rem;
-  line-height: 1.6rem;
-}
-
 #mc_embed_signup {
   margin-top: 2.56rem;
 }
@@ -53,15 +77,28 @@ form {
   border-bottom: 2px solid rgb(18,18,18);
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: white;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(18,18,18);
+}
+
 input {
   font-size: 1rem;
   border: 0;
 }
 
 .left-container {
-  height: 100%;
   background: white;
-  padding: 4.096rem 2.56rem 4.096rem 2.56rem;
+  padding: 2.56rem;
 }
 
 .right-container {
@@ -69,7 +106,6 @@ input {
   background: rgb(18,18,18);
   margin: 0;
   padding: 1.6rem;
-  height: 100%;
   display: grid;
 }
 
@@ -79,8 +115,6 @@ input {
   line-height: 0.9em;
   margin-bottom: 1.6em;
 }
-
-
 
 /* spacing */
 .pa0 { padding: 0; }
@@ -122,8 +156,8 @@ input {
 
 @media screen and (max-width: 48em) {
  .w-100-ns { width: 100%; }
- .container { flex-direction: column;}
+ .content { flex-direction: column; }
+ .content .right-container, .left-container {
+   overflow: inherit;
+ }
 }
-
-.scroll { overflow: scroll; }
-.no-scroll { overflow: hidden; }
