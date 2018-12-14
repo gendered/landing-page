@@ -1,27 +1,86 @@
 
 @font-face {
-  font-family: 'RomanaBTWXX-Roman';
-  src: url('fonts/383E86_0_0.eot');
-  src: url('fonts/383E86_0_0.eot?#iefix') 
-    format('embedded-opentype'),
-    url('fonts/383E86_0_0.woff2') 
-    format('woff2'),url('fonts/383E86_0_0.woff')
-    format('woff'),url('fonts/383E86_0_0.ttf') 
-    format('truetype');
-}
- 
-  
-@font-face {
   font-family: 'RomanaBTWXX-Bold';
-  src: url('fonts/383E86_1_0.eot');
-  src: url('fonts/383E86_1_0.eot?#iefix') 
+  src: url('../fonts/383E86_1_0.eot');
+  src: url('../fonts/383E86_1_0.eot?#iefix')
     format('embedded-opentype'),
-    url('fonts/383E86_1_0.woff2') 
-    format('woff2'),url('fonts/383E86_1_0.woff') 
-    format('woff'),url('fonts/383E86_1_0.ttf') 
+    url('../fonts/383E86_1_0.woff2')
+    format('woff2'),url('../fonts/383E86_1_0.woff')
+    format('woff'),url('../fonts/383E86_1_0.ttf')
     format('truetype');
 }
- 
+
+@font-face {
+  font-family: "Acumin";
+  src: url('../fonts/AcuminPro-Regular.eot'),
+  	url("../fonts/AcuminPro-Regular.otf") format("ttf"),
+  	url("../fonts/AcuminPro-Regular.woff") format("woff"),
+  	url("../fonts/AcuminPro-Regular.woff2") format("woff2"),
+  	url('../fonts/AcuminPro-Regular.ttf') format('truetype'),
+  	url('../fonts/AcuminPro-Regular.svg#AcuminPro-Regular') format('svg'),
+  	url('../fonts/AcuminPro-Regular.eot?#iefix') format('embedded-opentype');
+}
+
+html, body { height: 100%; }
 h1 {
   font-family: 'RomanaBTWXX-Bold';
+  font-size: 3.5rem;
 }
+
+body {
+  font-family: "Acumin";
+  font-size: 1rem;
+}
+
+form {
+  border-bottom: 2px solid black;
+}
+
+input {
+  font-size: .875rem;
+  border: 0;
+}
+/* spacing */
+.pa0 { padding: 0; }
+.pa4 { padding: 2rem; }
+.pv1 { padding-top: .25rem; padding-bottom: .25rem; }
+.pv2 { padding-top: .5rem; padding-bottom: .5rem; }
+.pb2 { padding-bottom: .5rem; }
+
+.ma5 { margin: 4rem; }
+
+.w-fit {
+  width: fit-content;
+  width: -moz-fit-content;    /* Firefox */
+  width: -webkit-fit-content; /* Chrome */
+}
+/* color */
+.bg-black { background-color: #000; }
+.white { color: #fff; }
+
+/* display */
+.db { display: block; }
+.dib { display: inline-block; }
+
+/* display / flex */
+.flex { display: -webkit-box; display: -ms-flexbox; display: flex; }
+.flex-row { flex-direction: row; }
+.flex-column  { flex-direction: column; }
+.flex-wrap { -ms-flex-wrap: wrap; flex-wrap: wrap; }
+.justify-between { -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
+.align-self { align-self: center };
+.ma0  {  margin: 0; }
+.mw6  {  max-width: 32rem; }
+
+.vh-100 { height: 100vh; }
+.w-50 {  width:  50%; }
+.w-100 { width: 100%; }
+.mw7  {  max-width: 48rem; }
+
+@media screen and (max-width: 48em) {
+ .w-100-ns { width: 100%; }
+ .container { flex-direction: column;}
+}
+
+.scroll { overflow-y: scroll; }
+.no-scroll { overflow: hidden;}
