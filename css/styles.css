@@ -63,26 +63,17 @@ input {
 }
 
 .right-container {
-  /* position: fixed;
-  top: 0;
-  right: 0; */
   color: white;
   background: rgb(18,18,18);
-}
-
-.sketch {
   margin: 0;
   height: 100%;
-  overflow-x: hidden;
-  overflow-y: hidden;
   display: grid;
-  grid-template-columns: repeat(8, 1fr);
 }
 
-.sketch span {
-  text-align: center;
+.right-container p {
+  font-size: 2.56rem;
   text-transform: capitalize;
-  transform-origin: center center;
+  margin: .5rem;
 }
 
 /* spacing */
